@@ -6,8 +6,8 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'Azure Pipelines'
+# pool:
+#   vmImage: 'Azure Pipelines'
 
 # variables:
 #   - group: AndroidKeystore
