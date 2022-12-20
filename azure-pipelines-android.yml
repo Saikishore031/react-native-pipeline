@@ -15,7 +15,11 @@ steps:
 - task: NodeTool@0
   displayName: 'Install Node'
   inputs:
-    versionSpec: '12.16.1'
+    versionSpec: '14.17.6'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'install -g react-native-cli'
 
 - script: npm install
   workingDirectory: src
